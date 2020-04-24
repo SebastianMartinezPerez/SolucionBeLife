@@ -11,13 +11,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+// Librerias metro
+using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
+using MahApps.Metro.Behaviours;
 
 namespace WPF
 {
     /// <summary>
     /// Lógica de interacción para Cliente.xaml
     /// </summary>
-    public partial class Cliente : Window
+    public partial class Cliente : MetroWindow
     {
         public Cliente()
         {
