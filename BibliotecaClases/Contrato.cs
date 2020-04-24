@@ -27,15 +27,13 @@ namespace BibliotecaClases
 		{
 			get { return _observaciones; }
 			set {
-                if (value.Trim().Length > 0)
-                {
+                if (value.Trim().Length > 0) {
                     _observaciones = value;
                 }
-                else
-                {
+                else {
                     throw new Exception("Campo obligatorio");
                 }
-                 }
+            }
 		}
 		public float PrimaMensual
 		{
