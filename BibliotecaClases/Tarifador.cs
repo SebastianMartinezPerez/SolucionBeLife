@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BibliotecaClases;
 
 namespace BibliotecaClases
 {
@@ -17,7 +18,7 @@ namespace BibliotecaClases
         public double CalcularPrima() // Calcular recargo de la prima
         {
             double recargo = 0;
-            int años = (DateTime.Now.Date.Year - cliente.FechaNacimiento.Date.Year);
+            int años = (DateTime.Now.Date.Year - Cliente.FechaNacimiento.Date.Year);
             
             // Filtro de edad
             if (años >= 18 && años<= 25)

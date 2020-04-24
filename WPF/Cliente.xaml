@@ -1,13 +1,51 @@
-﻿<Window x:Class="WPF.Cliente"
+﻿<Controls:MetroWindow x:Class="WPF.Cliente" 
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="Cliente" Height="450" Width="800">
-    <Grid>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="177,122,0,0" VerticalAlignment="Top"/>
+        Title="Seguros BeLife Cliente" Height="508.354" Width="800" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Rut&#xD;&#xA;" HorizontalAlignment="Left" Margin="101,68,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nombres" HorizontalAlignment="Left" Margin="101,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Apellidos" HorizontalAlignment="Left" Margin="101,152,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fecha Nacimiento" HorizontalAlignment="Left" Margin="101,195,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sexo" HorizontalAlignment="Left" Margin="101,240,0,0" VerticalAlignment="Top"/>
+        <Label Content="Estado Civil&#xD;&#xA;" HorizontalAlignment="Left" Margin="101,271,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.34,0.71"/>
+        <Button x:Name="btnGuardar" HorizontalAlignment="Left" Margin="101,342,0,0" VerticalAlignment="Top" Width="71" Height="88" Click="Button_Click">
+            <StackPanel>
+                <Image Source="image/ClientAdd.png" Height="59" Width="61"></Image>
+                <TextBlock>Agregar</TextBlock>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="221,342,0,0" VerticalAlignment="Top" Width="70" Height="88">
+            <StackPanel>
+                <Image Source="image/ClientSearch.png"></Image>
+                <TextBlock>Buscar</TextBlock>
+            </StackPanel>
+        </Button>
+        <Button  HorizontalAlignment="Left" Margin="337,342,0,0" VerticalAlignment="Top" Width="66" Height="88">
+            <StackPanel>
+                <Image Source="image/ClientUpdate.png"></Image>
+                <TextBlock>
+                    Actualizar
+                </TextBlock>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="448,342,0,0" VerticalAlignment="Top" Width="70" Height="88">
+            <StackPanel>
+                <Image Source="image/ClientDelete.png"></Image>
+                <TextBlock>Eliminar</TextBlock>
+            </StackPanel>
+        </Button>
+        <TextBox x:Name="txtRut" HorizontalAlignment="Left" Height="23" Margin="256,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNombres" HorizontalAlignment="Left" Height="23" Margin="256,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtNombres_TextChanged"/>
+        <TextBox x:Name="txtApellido" HorizontalAlignment="Left" Height="23" Margin="256,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <ComboBox x:Name="cboSexo" HorizontalAlignment="Left" Margin="256,240,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cboEstadoCivil" HorizontalAlignment="Left" Margin="256,271,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="dtfechaNacimiento" HorizontalAlignment="Left" Margin="256,197,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
-</Window>
+</Controls:MetroWindow>

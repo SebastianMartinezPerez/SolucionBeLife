@@ -11,23 +11,35 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BibliotecaClases;
 
 namespace WPF
 {
     /// <summary>
     /// Lógica de interacción para Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window1
     {
         public Window1()
         {
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void btnCliente_Click(object sender, RoutedEventArgs e)
         {
             Cliente menu   = new Cliente();
             menu.Show();
+        }
+
+        private void btnContrato_Click(object sender, RoutedEventArgs e)
+        {
+             WpfContrato contra= new WpfContrato();
+            contra.Show();
         }
     }
 }

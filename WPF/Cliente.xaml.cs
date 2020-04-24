@@ -11,18 +11,39 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BibliotecaClases;
 
 namespace WPF
 {
     /// <summary>
     /// Lógica de interacción para Cliente.xaml
     /// </summary>
-    public partial class Cliente : Window
+    public partial class Cliente 
     {
+        private Coleccion _coleccion = new Coleccion();
         public Cliente()
         {
             InitializeComponent();
          
+        }
+
+        private void txtNombres_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string rut = txtRut.Text;
+            string apellido = txtApellido.Text;
+            string nombres = txtNombres.Text;
+            DateTime fecha = 
+
         }
     }
 }
