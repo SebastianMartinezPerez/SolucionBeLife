@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaClases", "Bibliot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF", "WPF\WPF.csproj", "{7DAE4609-CB8C-4B04-9249-1E6C1DDEE730}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlador", "..\..\..\..\..\..\..\..\source\repos\Controlador\Controlador.csproj", "{6CC580D1-7612-44EB-B1F7-E03FEAF909A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlador", "Controlador\Controlador.csproj", "{9A17BBBA-546C-4369-A521-1CF88C8B5C96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{7DAE4609-CB8C-4B04-9249-1E6C1DDEE730}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DAE4609-CB8C-4B04-9249-1E6C1DDEE730}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DAE4609-CB8C-4B04-9249-1E6C1DDEE730}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6CC580D1-7612-44EB-B1F7-E03FEAF909A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6CC580D1-7612-44EB-B1F7-E03FEAF909A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6CC580D1-7612-44EB-B1F7-E03FEAF909A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6CC580D1-7612-44EB-B1F7-E03FEAF909A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A17BBBA-546C-4369-A521-1CF88C8B5C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A17BBBA-546C-4369-A521-1CF88C8B5C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A17BBBA-546C-4369-A521-1CF88C8B5C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A17BBBA-546C-4369-A521-1CF88C8B5C96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

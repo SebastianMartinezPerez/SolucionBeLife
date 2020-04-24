@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("e4247d5b-a9cb-4697-9e09-157b46dd458c")]
+[assembly: Guid("9a17bbba-546c-4369-a521-1cf88c8b5c96")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
@@ -29,8 +29,8 @@ using System.Runtime.InteropServices;
 //      Número de compilación
 //      Revisión
 //
-// Puede especificar todos los valores o usar los valores predeterminados de número de compilación y de revisión
-// utilizando el carácter "*", como se muestra a continuación:
+// Puede especificar todos los valores o usar los números de compilación y de revisión predeterminados
+// mediante el carácter "*", como se muestra a continuación:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
