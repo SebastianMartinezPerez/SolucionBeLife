@@ -18,8 +18,7 @@ namespace BibliotecaClases
         public double CalcularPrima() // Calcular recargo de la prima
         {
             double recargo = 0;
-            int años = (DateTime.Now.Date.Year - Cliente.FechaNacimiento.Date.Year);
-            
+            int años = (DateTime.Now.Date.Year - clienteTarifador.FechaNacimiento.Date.Year);
             // Filtro de edad
             if (años >= 18 && años<= 25)
                 recargo += 0.036;
@@ -29,15 +28,15 @@ namespace BibliotecaClases
                 recargo += 0.060;
 
             // Filtro de sexo
-            if (cliente.sexo.Descripcion.Equals("Hombre"))
+            if (clienteTarifador.sexo.Descripcion.Equals("Hombre"))
                 recargo += 0.024;
-            else if (cliente.sexo.Descripcion.Equals("Mujer"))
+            else if (clienteTarifador.sexo.Descripcion.Equals("Mujer"))
                 recargo += 0.012;
 
             // Filtro de estado civil
-            if (cliente.estadoCivil.Descripcion.Equals("Soltero"))
+            if (clienteTarifador.estadoCivil.Descripcion.Equals("Soltero"))
                 recargo += 0.048;
-            else if (cliente.estadoCivil.Descripcion.Equals("Casado"))
+            else if (clienteTarifador.estadoCivil.Descripcion.Equals("Casado"))
                 recargo += 0.024;
             else
                 recargo += 0.036;

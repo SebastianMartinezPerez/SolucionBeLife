@@ -6,6 +6,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Cliente" Height="450" Width="800">
+    <Grid>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="177,122,0,0" VerticalAlignment="Top"/>
         Title="Seguros BeLife Cliente" Height="508.354" Width="800" ResizeMode="NoResize">
     <Grid Margin="0,0,0,-6">
         <Label Content="Rut&#xD;&#xA;" HorizontalAlignment="Left" Margin="101,68,0,0" VerticalAlignment="Top"/>

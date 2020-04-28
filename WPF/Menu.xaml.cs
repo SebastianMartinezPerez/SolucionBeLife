@@ -11,6 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+// Libreria de metro
+using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
+using MahApps.Metro.Behaviours;
 using BibliotecaClases;
 
 namespace WPF
@@ -18,7 +22,7 @@ namespace WPF
     /// <summary>
     /// Lógica de interacción para Window1.xaml
     /// </summary>
-    public partial class Window1
+    public partial class Window1 : MetroWindow
     {
         public Window1()
         {
