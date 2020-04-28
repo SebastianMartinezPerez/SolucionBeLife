@@ -41,7 +41,34 @@ namespace Controlador
                 return false;
             }
         }
-        
+
+        // Método delete...
+
+        // Método update
+        public bool Update(Cliente c)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "ClienteUpdate";
+                cmd.Connection = con;
+                cmd.Parameters.Add("@rut", System.Data.SqlDbType.NVarChar, 10).Value = c.RutCliente;
+                cmd.Parameters.Add("@nombres", System.Data.SqlDbType.NVarChar, 20).Value = c.Nombres;
+                cmd.Parameters.Add("@apellidos", System.Data.SqlDbType.NVarChar, 20).Value = c.Apellidos;
+                cmd.Parameters.Add("@fechaNacimiento", System.Data.SqlDbType.Date).Value = c.FechaNacimiento;
+                cmd.Parameters.Add("@sexo", System.Data.SqlDbType.Int, 2).Value = c.sexo.IdSexo;
+                cmd.Parameters.Add("@estadoCivil", System.Data.SqlDbType.Int, 2).Value = c.estadoCivil.idEstadoCivil;
+                con.Open();
+                int x = cmd.ExecuteNonQuery();
+                con.Close();
+                return x > 0 ? true : false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
 
         // Método Read
         public Cliente Read(string idCliente)
@@ -101,6 +128,34 @@ namespace Controlador
                 }
                 con.Close();
                 return lista;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+
+        // Método ReadAllBySexo
+        public List<Cliente> ReadAllBySexo(int idSexo)
+        {
+            try
+            {
+                return ReadAll().Where(c => c.sexo.IdSexo == idSexo).ToList();
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+
+        // Método ReadAllBySexo
+        public List<Cliente> ReadAllByEstadoCivil(int idEstadoCivil)
+        {
+            try
+            {
+                return ReadAll().Where(es => es.estadoCivil.idEstadoCivil == idEstadoCivil).ToList();
             }
             catch (Exception)
             {

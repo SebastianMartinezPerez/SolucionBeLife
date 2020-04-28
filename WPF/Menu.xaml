@@ -7,8 +7,7 @@
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-        xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
-        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"  
         Title="Window1" Height="450" Width="800" ResizeMode="NoResize">
     <Grid HorizontalAlignment="Right" Width="780" Margin="0,0,2,0" Height="418" VerticalAlignment="Top">
         <Button x:Name="btnCliente" HorizontalAlignment="Left" Margin="144,180,0,0" VerticalAlignment="Top" Width="119" Height="159" Click="btnCliente_Click">

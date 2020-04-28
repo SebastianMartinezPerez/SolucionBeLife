@@ -12,7 +12,7 @@ namespace BibliotecaClases
 		private string _numero;
 		private DateTime _fechaCreacion;
 		private DateTime _fechaTermino;
-		private string _rutCliente;
+		private string _rutCliente; // Este no se usa
         public Plan planContrato { get; set; }
         private DateTime _fechaIniciVigencia;
 		private DateTime _fechaFinVigencia;
@@ -21,7 +21,7 @@ namespace BibliotecaClases
 		private float _primaAnual;
 		private float _primaMensual;
 		private string _observaciones;
-        public Cliente clienteContrato { get; set; }
+        public Cliente clienteContrato { get; set; } // Este si
 
         public string Observaciones
 		{

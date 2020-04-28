@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="DaoCliente.cs" />
+    <Compile Include="DaoContrato.cs" />
     <Compile Include="DaoEstadocivil.cs" />
     <Compile Include="DaoPlan.cs" />
     <Compile Include="DaoSexo.cs" />
