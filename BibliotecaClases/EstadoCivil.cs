@@ -17,7 +17,7 @@ namespace BibliotecaClases
 			get { return _descripcion; }
 			set { _descripcion = value; }
 		}
-		public int estadoCivil
+		public int idEstadoCivil
 		{
 			get { return _idEstadoCivil; }
 			set { _idEstadoCivil = value; }
