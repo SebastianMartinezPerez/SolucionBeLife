@@ -17,7 +17,7 @@ namespace Controlador
         }
 
 
-        // Método crear 
+        // Método create
         public bool Create(Cliente c) {
             try
             {
@@ -42,7 +42,30 @@ namespace Controlador
             }
         }
 
-        // Método delete...
+        // Método delete
+        /*
+         * Hay que implementar el filtro de si tiene contratos, 
+         * de esta forma no se borra el cliente con contratos
+        */
+        public bool Delete(Cliente c)
+        {
+            try
+            { 
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "ClienteDelete";
+                cmd.Connection = con;
+                cmd.Parameters.Add("@rut", System.Data.SqlDbType.NVarChar, 10).Value = c.RutCliente;
+                con.Open();
+                int x = cmd.ExecuteNonQuery();
+                con.Close();
+                return x > 0 ? true : false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
 
         // Método update
         public bool Update(Cliente c)

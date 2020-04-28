@@ -47,7 +47,29 @@ namespace Controlador
             }
         }
 
-        // Método Delete...
+        /* Método Delete (No estoy seguro si hay que implementarlo...)
+            No se si hay que implementarlo, ya que en la base de datos 
+            se guarda el estado del contrato como no vigente.
+         */
+        public bool Delete(Contrato c)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "ContratoDelete";
+                cmd.Connection = con;
+                cmd.Parameters.Add("@id", System.Data.SqlDbType.NVarChar, 10).Value = c.Numero;
+                con.Open();
+                int x = cmd.ExecuteNonQuery();
+                con.Close();
+                return x > 0 ? true : false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
 
         // Método update 
         public bool Update(Contrato c)
