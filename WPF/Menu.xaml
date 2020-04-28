@@ -1,4 +1,5 @@
 ﻿<Controls:MetroWindow x:Class="WPF.Window1"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -10,18 +11,20 @@
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         Title="Window1" Height="450" Width="800" ResizeMode="NoResize">
     <Grid HorizontalAlignment="Right" Width="780" Margin="0,0,2,0" Height="418" VerticalAlignment="Top">
-        <Button x:Name="btnCliente" HorizontalAlignment="Left" Margin="144,180,0,0" VerticalAlignment="Top" Width="119" Height="128" Click="btnCliente_Click">
+        <Button x:Name="btnCliente" HorizontalAlignment="Left" Margin="144,180,0,0" VerticalAlignment="Top" Width="119" Height="159" Click="btnCliente_Click">
             <StackPanel>
                 <Image Source="image/Clientes.png" Height="103" Width="102"/>
                 <TextBox Height="24" Text="Clientes"/>
             </StackPanel>
         </Button>
-        <Button x:Name="btnContrato" HorizontalAlignment="Left" Margin="470,180,0,0" VerticalAlignment="Top" Width="126" Height="128">
+        <Button x:Name="btnContrato" HorizontalAlignment="Left" Margin="470,180,0,0" VerticalAlignment="Top" Width="129" Height="159" Click="btnContrato_Click">
             <StackPanel>
                 <Image Source="image/Contratos.png" Height="103" Width="104"></Image>
                 <TextBox>Contrato
                 </TextBox>
             </StackPanel>
         </Button>
+        <Image Margin="0,10,538,331" Source="Logo BeLife.png" Stretch="Fill"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="-310,255,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Controls:MetroWindow>

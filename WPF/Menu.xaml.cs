@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using MahApps.Metro.Behaviours;
+using BibliotecaClases;
 
 namespace WPF
 {
@@ -28,10 +29,21 @@ namespace WPF
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void btnCliente_Click(object sender, RoutedEventArgs e)
         {
             Cliente menu   = new Cliente();
             menu.Show();
+        }
+
+        private void btnContrato_Click(object sender, RoutedEventArgs e)
+        {
+             WpfContrato contra= new WpfContrato();
+            contra.Show();
         }
     }
 }

@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Coleccion.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Contrato.cs" />
     <Compile Include="Enumeradores.cs" />

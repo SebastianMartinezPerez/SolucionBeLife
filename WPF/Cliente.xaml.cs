@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using MahApps.Metro.Behaviours;
+using BibliotecaClases;
 
 namespace WPF
 {
@@ -23,10 +24,30 @@ namespace WPF
     /// </summary>
     public partial class Cliente : MetroWindow
     {
+        private Coleccion _coleccion = new Coleccion();
         public Cliente()
         {
             InitializeComponent();
          
+        }
+
+        private void txtNombres_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string rut = txtRut.Text;
+            string apellido = txtApellido.Text;
+            string nombres = txtNombres.Text;
+            DateTime fecha = 
+
         }
     }
 }

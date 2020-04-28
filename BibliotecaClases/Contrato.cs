@@ -78,7 +78,17 @@ namespace BibliotecaClases
 		public string RutCliente
 		{
 			get { return _rutCliente; }
-			set { _rutCliente = value; }
+			set {
+				if (_rutCliente=="")
+				{
+					throw new Exception("no debe estar vacio");
+				}
+				else
+				{
+					_rutCliente = value;
+				}
+			}
+			
 		}
 		public DateTime FechaTermino
 		{
