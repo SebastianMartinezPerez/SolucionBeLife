@@ -34,9 +34,9 @@ namespace BibliotecaClases
                 recargo += 0.012;
 
             // Filtro de estado civil
-            if (clienteTarifador.estadoCivil.Descripcion.Equals("Soltero"))
+            if (clienteTarifador.estadocivil.Descripcion.Equals("Soltero"))
                 recargo += 0.048;
-            else if (clienteTarifador.estadoCivil.Descripcion.Equals("Casado"))
+            else if (clienteTarifador.estadocivil.Descripcion.Equals("Casado"))
                 recargo += 0.024;
             else
                 recargo += 0.036;

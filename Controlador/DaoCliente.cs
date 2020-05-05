@@ -30,7 +30,7 @@ namespace Controlador
                 cmd.Parameters.Add("@apellidos", System.Data.SqlDbType.NVarChar, 20).Value = c.Apellidos;
                 cmd.Parameters.Add("@fechaNacimiento", System.Data.SqlDbType.Date).Value = c.FechaNacimiento;
                 cmd.Parameters.Add("@sexo", System.Data.SqlDbType.Int, 2).Value = c.sexo.IdSexo;
-                cmd.Parameters.Add("@estadoCivil", System.Data.SqlDbType.Int, 2).Value = c.estadoCivil.idEstadoCivil;
+                cmd.Parameters.Add("@estadoCivil", System.Data.SqlDbType.Int, 2).Value = c.estadocivil.idEstadoCivil;
                 con.Open();
                 int x = cmd.ExecuteNonQuery();
                 con.Close();
@@ -81,7 +81,7 @@ namespace Controlador
                 cmd.Parameters.Add("@apellidos", System.Data.SqlDbType.NVarChar, 20).Value = c.Apellidos;
                 cmd.Parameters.Add("@fechaNacimiento", System.Data.SqlDbType.Date).Value = c.FechaNacimiento;
                 cmd.Parameters.Add("@sexo", System.Data.SqlDbType.Int, 2).Value = c.sexo.IdSexo;
-                cmd.Parameters.Add("@estadoCivil", System.Data.SqlDbType.Int, 2).Value = c.estadoCivil.idEstadoCivil;
+                cmd.Parameters.Add("@estadoCivil", System.Data.SqlDbType.Int, 2).Value = c.estadocivil.idEstadoCivil;
                 con.Open();
                 int x = cmd.ExecuteNonQuery();
                 con.Close();
@@ -114,7 +114,7 @@ namespace Controlador
                     c.Apellidos = dr[2].ToString();
                     c.FechaNacimiento = DateTime.Parse(dr[3].ToString());
                     c.sexo = new DaoSexo().Read(int.Parse(dr[4].ToString()));
-                    c.estadoCivil = new DaoEstadocivil().Read(int.Parse(dr[5].ToString()));
+                    c.estadocivil = new DaoEstadocivil().Read(int.Parse(dr[5].ToString()));
                 }
                 con.Close();
                 return c;
@@ -146,7 +146,7 @@ namespace Controlador
                     c.Apellidos = dr[2].ToString();
                     c.FechaNacimiento = DateTime.Parse(dr[3].ToString());
                     c.sexo = new DaoSexo().Read(int.Parse(dr[4].ToString()));
-                    c.estadoCivil = new DaoEstadocivil().Read(int.Parse(dr[5].ToString()));
+                    c.estadocivil = new DaoEstadocivil().Read(int.Parse(dr[5].ToString()));
                     lista.Add(c);
                 }
                 con.Close();
@@ -178,7 +178,7 @@ namespace Controlador
         {
             try
             {
-                return ReadAll().Where(es => es.estadoCivil.idEstadoCivil == idEstadoCivil).ToList();
+                return ReadAll().Where(es => es.estadocivil.idEstadoCivil == idEstadoCivil).ToList();
             }
             catch (Exception)
             {

@@ -4,3 +4,7 @@ C:\Users\DUOC\Downloads\SolucionBeLife-master\BibliotecaClases\obj\Debug\Bibliot
 C:\Users\DUOC\Downloads\SolucionBeLife-master\BibliotecaClases\obj\Debug\BibliotecaClases.dll
 C:\Users\DUOC\Downloads\SolucionBeLife-master\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
 C:\Users\DUOC\Downloads\SolucionBeLife-master\BibliotecaClases\obj\Debug\BibliotecaClases.csprojAssemblyReference.cache
+C:\Users\Freddy\Source\Repos\SolucionBeLife\BibliotecaClases\obj\Debug\BibliotecaClases.dll
+C:\Users\Freddy\Source\Repos\SolucionBeLife\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
+C:\Users\Freddy\Source\Repos\SolucionBeLife\BibliotecaClases\bin\Debug\BibliotecaClases.dll
+C:\Users\Freddy\Source\Repos\SolucionBeLife\BibliotecaClases\bin\Debug\BibliotecaClases.pdb

@@ -16,7 +16,7 @@ using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 using MahApps.Metro.Behaviours;
 using BibliotecaClases;
-
+using Controlador;
 namespace WPF
 {
     /// <summary>
@@ -24,11 +24,14 @@ namespace WPF
     /// </summary>
     public partial class Cliente : MetroWindow
     {
-        private Coleccion _coleccion = new Coleccion();
+        
         public Cliente()
         {
             InitializeComponent();
-         
+            cboSexo.ItemsSource =
+                new DaoSexo().ReadAll();
+            cboSexo.Items.Refresh();
+
         }
 
         private void txtNombres_TextChanged(object sender, TextChangedEventArgs e)
@@ -46,7 +49,7 @@ namespace WPF
             string rut = txtRut.Text;
             string apellido = txtApellido.Text;
             string nombres = txtNombres.Text;
-            DateTime fecha = 
+            
 
         }
     }

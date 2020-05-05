@@ -11,7 +11,7 @@ namespace Controlador
     {
         private static SqlConnection con;
         private string cadena =
-            @"Data Source=SEBASTIÁN;Initial Catalog=BeLife;Integrated Security=True";
+            @"Data Source=FREDDY-PC\SQLEXPRESS;Initial Catalog=BeLife;Integrated Security=True";
         /*
          * Cadena Sebastián : @"Data Source=SEBASTIÁN;Initial Catalog=BeLife;Integrated Security=True";
          * Cadena 2: 

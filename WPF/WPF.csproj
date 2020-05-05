@@ -72,11 +72,11 @@
     <Compile Include="Cliente.xaml.cs">
       <DependentUpon>Cliente.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu.xaml.cs">
-      <DependentUpon>Menu.xaml</DependentUpon>
-    </Compile>
     <Compile Include="WpfContrato.xaml.cs">
       <DependentUpon>WpfContrato.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wpfMenu.xaml.cs">
+      <DependentUpon>wpfMenu.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -126,10 +126,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Menu.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Resources\Icons.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -142,11 +138,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="wpfMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BibliotecaClases\BibliotecaClases.csproj">
       <Project>{e667521f-f715-460d-9f2a-db4664e73164}</Project>
       <Name>BibliotecaClases</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controlador\Controlador.csproj">
+      <Project>{9a17bbba-546c-4369-a521-1cf88c8b5c96}</Project>
+      <Name>Controlador</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -33,7 +33,7 @@ namespace Controlador
                 while (dr.Read())
                 {
                     ec = new EstadoCivil();
-                    ec.estadoCivil = int.Parse(dr[0].ToString());
+                    ec.idEstadoCivil = int.Parse(dr[0].ToString());
                     ec.Descripcion = dr[1].ToString();
                 }
                 con.Close();
@@ -61,7 +61,7 @@ namespace Controlador
                 while (dr.Read())
                 {
                     EstadoCivil ec = new EstadoCivil();
-                    ec.estadoCivil = int.Parse(dr[0].ToString());
+                    ec.idEstadoCivil = int.Parse(dr[0].ToString());
                     ec.Descripcion = dr[1].ToString();
                     lista.Add(ec);
                 }
