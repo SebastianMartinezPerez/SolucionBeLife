@@ -3,78 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WPF;
 
-namespace BibliotecaClases
+namespace Biblioteca
 {
-	public class Cliente
-	{
-		private String _rutCliente;
-		private String _nombres;
-		private String _apellidos;
-		private DateTime _fechaNacimiento;
-		public Sexo sexo { get; set; }
-		public EstadoCivil estadoCivil { get; set; }
+    public class Cliente
+    {
+        public string Rut { get; set; }
+        public string NombreContacto { get; set; }
+        public string RazonSocial { get; set; }
+        public string Direccion { get; set; }
+        public TipoEmpresa TipoEmpresa { get; set; }
+        public int Telefono { get; set; }
+        public Actividad Activi { get; set; }
+        public string Mail { get; set; }
 
+        public Cliente()
+        {
+            this.Init();
+        }
 
-		public DateTime FechaNacimiento
-		{
-			get { return _fechaNacimiento; }
-			set { _fechaNacimiento = value; }
-		}
-		public String Apellidos
-		{
-			get { return _apellidos; }
-			set
-			{
-				if (_apellidos == "")
-				{
-					throw new Exception("no debe estar vacio");
-
-				}
-				else
-					_apellidos = value;
-			}
-		}
-		public String Nombres
-		{
-			get { return _nombres; }
-			set
-			{
-				if (_nombres == "")
-				{
-					throw new Exception("no debe estar vacio");
-				}
-				else
-				{
-					_nombres = value;
-				}
-			}
-		} 
-		
-		public String RutCliente
-		{
-			get { return _rutCliente; }
-			set
-			{
-				if (_rutCliente == "")
-				{
-					throw new Exception("no debe estar vacio");
-				}
-				else
-				{
-					_rutCliente = value;
-				}
-
-			}
-		}
-		public Cliente()
-		{
-
-		}
-
-
-
-	}
-
-
+        private void Init()
+        {
+            Rut = string.Empty;
+            NombreContacto = string.Empty;
+            RazonSocial = string.Empty;
+            Direccion = string.Empty;
+            Mail = string.Empty;
+            Telefono = 0;
+        }
+    }
 }

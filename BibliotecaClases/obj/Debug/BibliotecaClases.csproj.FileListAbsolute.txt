@@ -1,0 +1,6 @@
+C:\Users\DUOC\Downloads\SolucionBeLife-master\BibliotecaClases\bin\Debug\BibliotecaClases.dll
+C:\Users\DUOC\Downloads\SolucionBeLife-master\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
+C:\Users\DUOC\Downloads\SolucionBeLife-master\BibliotecaClases\obj\Debug\BibliotecaClases.csproj.CoreCompileInputs.cache
+C:\Users\DUOC\Downloads\SolucionBeLife-master\BibliotecaClases\obj\Debug\BibliotecaClases.dll
+C:\Users\DUOC\Downloads\SolucionBeLife-master\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
+C:\Users\DUOC\Downloads\SolucionBeLife-master\BibliotecaClases\obj\Debug\BibliotecaClases.csprojAssemblyReference.cache

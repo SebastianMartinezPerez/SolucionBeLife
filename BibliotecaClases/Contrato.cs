@@ -45,7 +45,13 @@ namespace BibliotecaClases
 			get { return _primaAnual; }
 			set { _primaAnual = value; }
 		}
-		public bool DeclaracionSalud
+
+        public bool LeerContrato()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool DeclaracionSalud
 		{
 			get { return _declaracionSalud; }
 			set { _declaracionSalud = value; }
@@ -106,6 +112,17 @@ namespace BibliotecaClases
 			set { _numero = value; }
 		}
 
+        public DateTime? Creacion { get; set; }
+        public DateTime? Termino { get; set; }
+        public DateTime? FechaHoraInicio { get; set; }
+        public DateTime? FechaHoraTermino { get; set; }
+        public object IdTipoEvento { get; set; }
+        public bool? Realizado { get; set; }
+        public object PersonalAdicional { get; set; }
+        public object Asistentes { get; set; }
+        public object ValorTotalContrato { get; set; }
+        public object IdModalidad { get; set; }
+
         public Contrato()
         {
 
@@ -118,5 +135,15 @@ namespace BibliotecaClases
             pba += planContrato.PrimaBase;
             return pba;
         }
-	}
+
+        public bool CrearContrato()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool ActualizarContrato()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
