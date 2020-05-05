@@ -8,22 +8,67 @@
         mc:Ignorable="d"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"  
-        Title="Window1" Height="450" Width="800" ResizeMode="NoResize">
-    <Grid HorizontalAlignment="Right" Width="780" Margin="0,0,2,0" Height="418" VerticalAlignment="Top">
-        <Button x:Name="btnCliente" HorizontalAlignment="Left" Margin="144,180,0,0" VerticalAlignment="Top" Width="119" Height="159" Click="btnCliente_Click">
+        Title="Menu Principal" Height="493.5" Width="975.5" ResizeMode="NoResize" Background="#FFFBFBFB">
+    <Grid HorizontalAlignment="Right" Width="968" Margin="0,0,2,0" Height="454" VerticalAlignment="Top">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFBFBFB" Offset="0"/>
+                <GradientStop Color="#FFFBFBFB" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Controls:Tile Title="Administración Cliente" x:Name="TileAdmCliente" Margin="399,13,205,278" Height="Auto" Width="Auto" Click="TileAdmCliente_Click">
+            <Controls:Tile.Background>
+                <ImageBrush ImageSource="image/Contratos.png"/>
+            </Controls:Tile.Background>
+            <Image Source="BeLife/Clientes.png"></Image>
+        </Controls:Tile>
+        <Button x:Name="btnContrato" HorizontalAlignment="Left" Margin="6,12,0,0" VerticalAlignment="Top" Width="380" Height="168" Click="btnContrato_Click" Background="#CC1D054F">
             <StackPanel>
-                <Image Source="image/Clientes.png" Height="103" Width="102"/>
-                <TextBox Height="24" Text="Clientes"/>
-            </StackPanel>
-        </Button>
-        <Button x:Name="btnContrato" HorizontalAlignment="Left" Margin="470,180,0,0" VerticalAlignment="Top" Width="129" Height="159" Click="btnContrato_Click">
-            <StackPanel>
-                <Image Source="image/Contratos.png" Height="103" Width="104"></Image>
-                <TextBox>Contrato
+                <Image Source="image/Contratos.png" Height="139" Width="368"/>
+                <TextBox Width="67">Contrato
                 </TextBox>
             </StackPanel>
         </Button>
-        <Image Margin="0,10,538,331" Source="Logo BeLife.png" Stretch="Fill"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="-310,255,0,0" VerticalAlignment="Top"/>
+        <Image Margin="780,2,4,390" Source="Logo BeLife.png" Stretch="Fill"/>
+        <Controls:Tile Title="Administración Contrato" x:Name="TileAdmContrato" Margin="8,221,574,67" Height="Auto" Width="Auto" Click="TileAdmContrato_Click" Background="#CC1D054F">
+            <Image Source="DataSearch.png"/>
+        </Controls:Tile>
+        <Button x:Name="btnCliente_Copy" HorizontalAlignment="Left" Margin="414,218,0,0" VerticalAlignment="Top" Width="348" Height="169" Click="btnCliente_Click" Background="#CC1D054F">
+            <StackPanel>
+                <Image Source="image/Clientes.png" Height="135" Width="338">
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="image/ClientSearch.png"/>
+                    </Image.OpacityMask>
+                </Image>
+                <TextBox Height="24" Text="Clientes" Width="56"/>
+            </StackPanel>
+        </Button>
+        <Controls:Tile x:Name="TileRegresar" Margin="836,306,25,60" Height="Auto" Width="Auto" Click="TileRegresar_Click" Background="#CC1D054F">
+            <Image Source="Previous1.png" Width="94" Height="75"/>
+        </Controls:Tile>
+        <Grid Margin="0,0,-5,2" Background="#FFFBFBFB">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="564*"/>
+                <ColumnDefinition Width="482*"/>
+                <ColumnDefinition Width="41*"/>
+            </Grid.ColumnDefinitions>
+
+            <Controls:Tile Title="Listado Contrato" x:Name="TileListadoContrato" Margin="10,11,105,234" Height="Auto" Width="Auto" Click="TileListadoContrato_Click" Background="#CC1D054F">
+                <Image Source="Contratos3.png"/>
+            </Controls:Tile>
+            <Image x:Name="dark_logo_transparent_background_png" Margin="329,10,-5,377" Source="Logo BeLife1.png" Stretch="Fill" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <Controls:Tile Title="Administración Contrato" x:Name="TileAdmContrato1" Margin="10,240,105,10" Height="Auto" Width="Auto" Click="TileAdmContrato_Click" Background="#CC1D054F">
+                <Image Source="DataSearch2.png"/>
+            </Controls:Tile>
+            <Controls:Tile Title="Administración Cliente" x:Name="TileAdmCliente1" Margin="486,10,110,231" Height="Auto" Width="Auto" Click="TileAdmCliente_Click" Background="#CC1D054F" Grid.ColumnSpan="2">
+                <Image Source="Clientes1.png"/>
+            </Controls:Tile>
+            <Controls:Tile Title="Listado Cliente" x:Name="TileListadoCliente" Margin="486,236,108,10" Height="Auto" Width="Auto" Click="TileListadoCliente_Click" Background="#CC1D054F" Grid.ColumnSpan="2">
+                <Image Source="ClientSearch1.png"/>
+            </Controls:Tile>
+            <Controls:Tile x:Name="TileRegresar1" Margin="359,362,23,15" Height="Auto" Width="Auto" Click="TileRegresar_Click" Background="#CC1D054F" Grid.Column="1" Grid.ColumnSpan="2">
+                <Image Source="Previous3.png" Width="64" Height="66"/>
+            </Controls:Tile>
+        </Grid>
     </Grid>
 </Controls:MetroWindow>

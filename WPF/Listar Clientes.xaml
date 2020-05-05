@@ -1,0 +1,37 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="WPF.Listar_Clientes"
+        mc:Ignorable="d"
+        Title="Listar_Clientes" Height="547.34" Width="1037.766">
+    <Grid Margin="0,0,23,14">
+
+        <Grid Margin="0,0,-90,50" Background="White">
+            <Label x:Name="lbl_Rut" Content="Rut:" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <TextBox x:Name="txtRut" HorizontalAlignment="Left" Height="46" Margin="10,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" FontSize="16"/>
+            <Label x:Name="lbl_TipoEmpresa" Content="Tipo Empresa:" HorizontalAlignment="Left" Margin="10,252,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Label x:Name="lbl_Actividad" Content="Actividad:" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.342,-0.808" FontSize="16"/>
+            <ComboBox x:Name="cmbActividadEmpresa" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top" Width="277" Height="47"/>
+            <ComboBox x:Name="cmbTipoEmpresa" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Width="277" Height="50"/>
+            <DataGrid BorderThickness="3" x:Name="dgListaClientes" HorizontalAlignment="Left" Margin="380,10,0,0" VerticalAlignment="Top" Width="642" Height="432" BorderBrush="#CC1D054F"/>
+            <Image x:Name="dark_logo_transparent_background_png" Margin="0,344,955,0" Source="image/Logo BeLife.png" Stretch="Fill"/>
+            <mah:Tile x:Name="TileRegresar" Height="Auto" Margin="10,10,1029,387" Width="Auto" Click="TileRegresar_Click" Background="#CC1D054F">
+                <Image Source="Previous3.png" Width="64" Height="66"/>
+            </mah:Tile>
+            <mah:Tile x:Name="TileBuscarActividad" Margin="292,184,735,205" Height="Auto" Width="Auto" Background="#CC1D054F" Click="TileBuscarActividad_Click">
+                <Image Source="busca.png" Width="69" Height="65"/>
+            </mah:Tile>
+            <mah:Tile x:Name="TileBuscarTipoEmpresa" Click="TileBuscarTipoEmpresa_Click" Height="Auto" Margin="292,274,735,114" Width="Auto" Background="#CC1D054F">
+                <Image Source="busca1.png" Width="66" Height="66"/>
+            </mah:Tile>
+            <mah:Tile x:Name="TileBuscarRut" Margin="294,98,735,293" Height="Auto" Width="Auto" Click="TileBuscarRut_Click" Background="#CC1D054F">
+                <Image Source="busca2.png" Width="68" Height="59"/>
+            </mah:Tile>
+
+        </Grid>
+
+    </Grid>
+</Window>
