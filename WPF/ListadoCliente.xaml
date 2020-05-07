@@ -1,0 +1,34 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="WPF.ListadoCliente"
+        mc:Ignorable="d"
+        Title="Listado Cliente" Height="502.444" Width="845.677">
+    <Grid>
+
+        <mah:Tile x:Name="TileRegresar1" Margin="13,10,745,403" Height="Auto" Width="Auto"  Background="#CC1D054F" Click="TileRegresar1_Click">
+            <Image Source="image/Volver.png" Width="67" Height="48"/>
+        </mah:Tile>
+        <Label x:Name="lbl_Rut" Content="Rut:" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtRut" HorizontalAlignment="Left" Height="46" Margin="13,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" FontSize="16"/>
+        <Label x:Name="lbl_Actividad" Content="Actividad:" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.342,-0.808" FontSize="16"/>
+        <Label x:Name="lbl_TipoEmpresa" Content="Tipo Empresa:" HorizontalAlignment="Left" Margin="10,252,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Image HorizontalAlignment="Left" Height="48" Margin="4,416,0,0" VerticalAlignment="Top" Width="162" Source="image/Logo BeLife.png"/>
+        <ComboBox x:Name="cmbActividadEmpresa" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top" Width="277" Height="47" SelectionChanged="CmbActividadEmpresa_SelectionChanged"/>
+        <ComboBox x:Name="cmbTipoEmpresa" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Width="277" Height="50"/>
+        <DataGrid BorderThickness="3" x:Name="dgListaClientes" HorizontalAlignment="Left" Margin="368,52,0,0" VerticalAlignment="Top" Width="456" Height="393" BorderBrush="#CC1D054F"/>
+        <mah:Tile x:Name="TileRegresar1_Copy" Margin="297,113,479,310" Height="Auto" Width="Auto"  Background="#CC1D054F" Click="TileRegresar1_Click">
+            <Image Source="image/DataSearch.png" Width="56" Height="44"/>
+        </mah:Tile>
+        <mah:Tile x:Name="TileRegresar1_Copy2" Margin="292,288,481,133" Height="Auto" Width="Auto"  Background="#CC1D054F" Click="TileRegresar1_Click">
+            <Image Source="image/DataSearch.png" Width="55" Height="45"/>
+        </mah:Tile>
+        <mah:Tile x:Name="TileRegresar1_Copy1" Margin="296,198,480,225" Height="Auto" Width="Auto"  Background="#CC1D054F" Click="TileRegresar1_Click">
+            <Image Source="image/DataSearch.png" Width="54" Height="44"/>
+        </mah:Tile>
+
+    </Grid>
+</Window>

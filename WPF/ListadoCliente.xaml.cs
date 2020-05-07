@@ -11,27 +11,18 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BibliotecaClases;
 
 namespace WPF
 {
     /// <summary>
-    /// Lógica de interacción para WpfContrato.xaml
+    /// Lógica de interacción para ListadoCliente.xaml
     /// </summary>
-    public partial class WpfContrato : Window
+    public partial class ListadoCliente : Window
     {
-        public WpfContrato()
+        public ListadoCliente()
         {
             InitializeComponent();
-        }
-
-        private void ___Sin_nombre__TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TileRegresar1_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

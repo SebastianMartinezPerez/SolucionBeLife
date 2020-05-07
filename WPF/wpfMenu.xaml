@@ -56,20 +56,20 @@
             </Grid.ColumnDefinitions>
 
             <Controls:Tile Title="Listado Contrato" Click="TileListadoContrato_Click" x:Name="TileListadoContrato" Margin="10,11,105,234" Height="Auto" Width="Auto"  Background="#CC1D054F">
-                <Image Source="Contratos3.png"/>
+                <Image Source="image/Contratos.png"/>
             </Controls:Tile>
-            <Image x:Name="dark_logo_transparent_background_png" Margin="329,10,-5,377" Source="Logo BeLife1.png" Stretch="Fill" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <Image x:Name="dark_logo_transparent_background_png" Margin="329,13,7,382" Source="Logo BeLife1.png" Stretch="Fill" Grid.Column="1" Grid.ColumnSpan="2"/>
             <Controls:Tile Title="Administración Contrato" Click="TileAdmContrato1_Click" x:Name="TileAdmContrato1" Margin="10,240,105,10" Height="Auto" Width="Auto"  Background="#CC1D054F">
-                <Image Source="DataSearch2.png"/>
+                <Image Source="image/DataSearch.png"/>
             </Controls:Tile>
             <Controls:Tile Title="Administración Cliente" Click="TileAdmCliente1_Click" x:Name="TileAdmCliente1" Margin="486,10,110,231" Height="Auto" Width="Auto"  Background="#CC1D054F" Grid.ColumnSpan="2">
-                <Image Source="Clientes1.png"/>
+                <Image Source="image/Clientes.png"/>
             </Controls:Tile>
             <Controls:Tile Title="Listado Cliente" x:Name="TileListadoCliente" Margin="486,236,108,10" Height="Auto" Width="Auto"  Background="#CC1D054F" Grid.ColumnSpan="2">
-                <Image Source="ClientSearch1.png"/>
+                <Image Source="image/ClientSearch.png"/>
             </Controls:Tile>
             <Controls:Tile x:Name="TileRegresar1" Margin="359,362,23,15" Height="Auto" Width="Auto"  Background="#CC1D054F" Grid.Column="1" Grid.ColumnSpan="2">
-                <Image Source="image/DataSearch.png" Width="64" Height="66"/>
+                <Image Source="image/Volver.png" Width="64" Height="66"/>
             </Controls:Tile>
         </Grid>
     </Grid>

@@ -52,5 +52,10 @@ namespace WPF
             
 
         }
+
+        private void CboSexo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

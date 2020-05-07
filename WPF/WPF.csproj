@@ -65,12 +65,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AdministraClientes.xaml.cs">
+      <DependentUpon>AdministraClientes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Cliente.xaml.cs">
       <DependentUpon>Cliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoCliente.xaml.cs">
+      <DependentUpon>ListadoCliente.xaml</DependentUpon>
     </Compile>
     <Compile Include="WpfContrato.xaml.cs">
       <DependentUpon>WpfContrato.xaml</DependentUpon>
@@ -122,7 +128,15 @@
     <Resource Include="image\Logo BeLife.png" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="AdministraClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Cliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListadoCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -161,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Logo BeLife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Volver.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
