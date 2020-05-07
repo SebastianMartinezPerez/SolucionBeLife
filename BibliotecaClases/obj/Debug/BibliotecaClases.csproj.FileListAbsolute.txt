@@ -8,3 +8,9 @@ C:\Users\Freddy\Source\Repos\SolucionBeLife\BibliotecaClases\obj\Debug\Bibliotec
 C:\Users\Freddy\Source\Repos\SolucionBeLife\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
 C:\Users\Freddy\Source\Repos\SolucionBeLife\BibliotecaClases\bin\Debug\BibliotecaClases.dll
 C:\Users\Freddy\Source\Repos\SolucionBeLife\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
+C:\Users\DUOC\Downloads\SolucionBeLife\BibliotecaClases\bin\Debug\BibliotecaClases.dll
+C:\Users\DUOC\Downloads\SolucionBeLife\BibliotecaClases\bin\Debug\BibliotecaClases.pdb
+C:\Users\DUOC\Downloads\SolucionBeLife\BibliotecaClases\obj\Debug\BibliotecaClases.csprojAssemblyReference.cache
+C:\Users\DUOC\Downloads\SolucionBeLife\BibliotecaClases\obj\Debug\BibliotecaClases.csproj.CoreCompileInputs.cache
+C:\Users\DUOC\Downloads\SolucionBeLife\BibliotecaClases\obj\Debug\BibliotecaClases.dll
+C:\Users\DUOC\Downloads\SolucionBeLife\BibliotecaClases\obj\Debug\BibliotecaClases.pdb
