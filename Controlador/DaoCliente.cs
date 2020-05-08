@@ -43,28 +43,32 @@ namespace Controlador
         }
 
         // Método delete
-        /*
-         * Hay que implementar el filtro de si tiene contratos, 
-         * de esta forma no se borra el cliente con contratos
-        */
         public bool Delete(Cliente c)
         {
-            try
-            { 
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                cmd.CommandText = "ClienteDelete";
-                cmd.Connection = con;
-                cmd.Parameters.Add("@rut", System.Data.SqlDbType.NVarChar, 10).Value = c.RutCliente;
-                con.Open();
-                int x = cmd.ExecuteNonQuery();
-                con.Close();
-                return x > 0 ? true : false;
+            if (new DaoContrato().CantContratos(c.RutCliente) > 0)
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.CommandText = "ClienteDelete";
+                    cmd.Connection = con;
+                    cmd.Parameters.Add("@rut", System.Data.SqlDbType.NVarChar, 10).Value = c.RutCliente;
+                    con.Open();
+                    int x = cmd.ExecuteNonQuery();
+                    con.Close();
+                    return x > 0 ? true : false;
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
             }
-            catch (Exception)
+            else
             {
                 return false;
             }
+            
         }
 
         // Método update

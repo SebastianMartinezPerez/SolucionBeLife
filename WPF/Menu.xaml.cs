@@ -36,13 +36,13 @@ namespace WPF
 
         private void btnCliente_Click(object sender, RoutedEventArgs e)
         {
-            Cliente menu   = new Cliente();
+            Cliente menu = new Cliente();
             menu.Show();
         }
 
         private void btnContrato_Click(object sender, RoutedEventArgs e)
         {
-             WpfContrato contra= new WpfContrato();
+             WpfContrato contra = new WpfContrato();
             contra.Show();
         }
     }

@@ -47,10 +47,7 @@ namespace Controlador
             }
         }
 
-        /* Método Delete (No estoy seguro si hay que implementarlo...)
-            No se si hay que implementarlo, ya que en la base de datos 
-            se guarda el estado del contrato como no vigente.
-         */
+        // Método delete (arreglado)
         public bool Delete(Contrato c)
         {
             try
@@ -215,7 +212,12 @@ namespace Controlador
             }
         }
 
-
+        // Método Cantidad de contratos asociados con un rut específico
+        public int CantContratos(string rut)
+        { 
+            int x = ReadAll().Where(c => c.clienteContrato.RutCliente.Equals(rut)).Count();
+            return x;
+        }
 
     }
 }
